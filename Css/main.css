@@ -1,0 +1,98 @@
+
+.container-profile-img{]
+    max-height: 300px;
+    max-width: 300px;
+   
+  
+    border-radius: 50%;
+}
+.container-profile-img:hover{
+    border: 1px solid black;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.bio{
+    font-size: 15px;
+    text-align: center;
+}
+
+.Profile-name{
+    text-align: center;
+    margin: 9px;
+    margin-top: 13px;
+}
+.skills-container{
+    display: flex;
+    justify-content: space-around;
+}
+.skill{
+    min-width: 60px;
+    padding: 4px;
+    font-size: 13px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px #808080;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+}
+.skill:hover{
+    box-shadow: 0px 0px 3px  #808080;
+    transition: 0.5s;
+    cursor: pointer;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.animated-txt {
+  color: #222;
+  font-family: Roboto, Arial, sans-serif;
+
+  transform: translate(0%, 0%);
+  width: 90vmin;
+}
+.animated-txt > div {
+  height: 50%;
+  overflow: hidden;
+ 
+}
+.animated-txt > div div {
+
+  padding: 2vmin 0;
+
+}
+.animated-txt > div div span {
+  display: block;
+}
+.animated-txt > div.text-top {
+  border-bottom: 1vmin solid #000;
+  top: 0;
+}
+.animated-txt > div.text-top div {
+  animation: showTopText 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-txt > div.text-top div span:first-child {
+  color: #767676;
+}
+.animated-txt > div.text-bottom {
+  bottom: 0;
+}
+.animated-txt > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay:2s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}
