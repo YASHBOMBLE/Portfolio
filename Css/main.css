@@ -1,8 +1,9 @@
 
 .container-profile-img{]
-    max-height: 300px;
-    max-width: 300px;
+    max-height: 320px;
+    max-width: 320px;
     border-radius: 50%;
+    margin-top:30px;
 }
 .container-profile-img:hover{
     border: 1px dotted black;
@@ -98,4 +99,15 @@
 .logo-size{
   max-width: 25px;
   
+}
+.skill-show{
+  border: 0.5px solid black;
+  border-radius: 8.5px;
+}
+.skill-show:hover{
+  border: 1px solid black;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
