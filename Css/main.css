@@ -2,12 +2,10 @@
 .container-profile-img{]
     max-height: 300px;
     max-width: 300px;
-   
-  
     border-radius: 50%;
 }
 .container-profile-img:hover{
-    border: 1px solid black;
+    border: 1px dotted black;
     transition: 0.5s;
     cursor: pointer;
 }
