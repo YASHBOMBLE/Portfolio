@@ -141,11 +141,17 @@
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
-.footer{
-  max-width: 100%;
-}
+
 .footer-icon{
   height: 28px;
   cursor: pointer;
   margin: 15px;
+}
+.footer-bg{
+ 
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  color: black;
+  padding: 20px;
 }
