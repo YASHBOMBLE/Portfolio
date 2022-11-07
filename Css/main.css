@@ -142,16 +142,7 @@
   100% { opacity: 1; }
 }
 
-.footer-icon{
-  height: 28px;
-  cursor: pointer;
-  margin: 15px;
-}
-.footer-bg{
- 
-  background-color: whitesmoke;
+.project-container{
   display: flex;
   justify-content: center;
-  color: black;
-  padding: 20px;
 }
