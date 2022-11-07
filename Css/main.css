@@ -142,7 +142,18 @@
   100% { opacity: 1; }
 }
 
-.project-container{
+.size{
+  max-width: 100%;
+}
+.footer-img{
+  height: 30px;
+  margin: 15px;
+}
+.footer-container{
   display: flex;
   justify-content: center;
+}
+.icon:hover{
+  cursor: pointer;
+  
 }
