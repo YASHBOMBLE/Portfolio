@@ -157,3 +157,7 @@
   cursor: pointer;
   
 }
+.Download-btn{
+  display: flex;
+  justify-content: space-around;
+}
