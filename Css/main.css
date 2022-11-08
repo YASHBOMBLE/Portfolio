@@ -161,3 +161,10 @@
   display: flex;
   justify-content: space-around;
 }
+.project-img-size{
+  height: 150px;
+}
+.project-container-btn{
+  display: flex;
+  justify-content: space-between;
+}
