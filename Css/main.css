@@ -121,6 +121,14 @@ td{
   opacity: 0.5;
   background: rgb(255, 255, 255, 0.05);
   color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.skill-show:hover{
+background-color:white;
+color: black;
+transition: 0.8s;
+font-weight: bold;
 }
 
 .fade-in-text {
