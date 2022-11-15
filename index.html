@@ -12,7 +12,7 @@
   <link rel="shortcut icon" href="./img/y.png" type="image/x-icon">
 </head>
 
-<body>
+<body class="bg-dark">
 
   <nav class="navbar navbar-expand-lg bg-light shadow  sticky-top bg-light">
     <div class="container-fluid">
@@ -48,20 +48,22 @@
     <div class="row d-flex align-items-center">
 
       <div class="col-md-6">
-        <div class="shadow rounded-circle p-3 mt-5 shadow mx-auto d-block" style="height: 350px; width:350px;">
-       <img src="./Picsart_22-11-09_19-46-48-296.jpg" class="rounded-circle img-fluid shadow img-thumbnail" style="height: 320px; width:320px; cursor: pointer;" alt="">
-      </div>
+        <div class="shadow rounded-circle p-3 mt-5 mb-2 shadow mx-auto d-block"
+          style="height: 350px; width:350px; background-color: #bec1c1;">
+          <img src="./Picsart_22-11-09_19-46-48-296.jpg" class="rounded-circle img-fluid shadow img-thumbnail"
+            style="height: 320px; width:320px; cursor: pointer;" alt="">
+        </div>
       </div>
       <div class="col-md-6 ">
         <div class="animated-txt">
           <div class="text-top">
             <div>
               <span class="display-2 Profile-name">Hi I'am,</span>
-              <span class="Profile-name display-6">Yash Dattatray Bomble</span>
+              <span class="Profile-name display-6" style="color: whitesmoke;">Yash Dattatray Bomble</span>
             </div>
           </div>
           <div class="text-bottom">
-            <div class="bio">Final Year | Bsc computer Science</div>
+            <div class="bio" style="color: #80ffd4 ;">Final Year | Bsc computer Science</div>
           </div>
         </div>
         <br>
@@ -74,10 +76,12 @@
 
       </div>
     </div>
+    <!--Currently work statement using animation-->
 
     <div class="row">
-      <div class="col-md-6" id="skills">
-        <h1 class="display-5">Skills :</h1>
+
+      <div class="col-md-6 bg-dark rounded " style="color: white;" id="skills">
+        <h1 class=" "> Skills :</h1>
         <ul type="none" class="shadow p-5 skill-show mt-3">
           <li class="fade-in-text"> 👉 C Programing language.</li>
           <li class="fade-in-text">👉 Hyper text Markup Language ( HTML ).</li>
@@ -85,15 +89,15 @@
           <li class="fade-in-text">👉 Python Programing Language .</li>
           <li class="fade-in-text">👉 Java Programing Language .</li>
         </ul>
+
       </div>
 
-
       <div class="col-md-6" id="resume">
-        <h1 class="display-5 text-center mt-3"> Download Resume :</h1>
-        <div class="Download-btn mt-3">
-          <button class="btn btn-warning m-5   fw-bold">Download Resume</button>
-          <button class="btn btn-dark m-5   fw-bold">View Resume</button>
-        </div>
+        <h2 class="" text-center mt-3"> Download Resume :</h1>
+          <div class="Download-btn mt-3">
+            <button class="btn btn-warning m-5   fw-bold" onclick="download()">Download Resume</button>
+            <button class="btn btn-light m-5   fw-bold">View Resume</button>
+          </div>
       </div>
 
     </div>
@@ -120,25 +124,44 @@
               </ul>
             </h6>
             <div class="project-container-btn mt-2">
-              <button class="btn btn-dark fw-bold ">Source Code
+              <button class="btn btn-light fw-bold ">Source Code
 
               </button>
-              <button class="btn btn-dark fw-bold" onclick="live()">Live Demo</button>
+              <button class="btn btn-light fw-bold" onclick="live()">Live Demo</button>
             </div>
           </div>
 
         </div>
         <div class="col-md-6">
           <div class="shadow p-4 rounded m-4 mb-4">
-            <h6>Title : Calculator using Html Css And JavaScript.</h6>
 
+            <h6>Title : Calculator using Html Css And JavaScript.</h6>
+            <div class="p-3 text-center ">
+              <img src="./img/project-img/Digiclock.jpg"
+                class="img-fluid rounded project-img-size shadow-sm img-thumbnail" alt="">
+
+            </div>
+            <h6>Description :
+              <ul type="bullets" class="mb-4">
+                <li class="m-1" style="word-spacing: 1px;">Html and css is used for frontend developement.</li>
+                <li class="m-1" style="word-spacing: 1px;">Performing Operations Java is Used.</li>
+                <li class="m-1" style="word-spacing: 1px;">Css Gradient genarator is used.</li>
+                <li class="m-1" style="word-spacing: 1px;">Useful for understanding JavaScript</li>
+              </ul>
+            </h6>
+            <div class="project-container-btn mt-2">
+              <button class="btn btn-light fw-bold ">Source Code
+
+              </button>
+              <button class="btn btn-light fw-bold" onclick="live()">Live Demo</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <div class="row" id="Education">
-      <h2>Education :</h2>
+      <h2>Educational Qualification:</h2>
       <div class="col-md-12">
 
         <div class="p-2 mb-4 mt-4 shadow">
@@ -170,10 +193,12 @@
         </div>
 
       </div>
+      <div>
 
+      </div>
     </div>
     <div class="row">
-      <div class="bg-light p-3 size">
+      <div class="col-md-12 p-3 size">
         <div class=" footer-container">
           <div class="p-1 rounded-circle shadow ms- mb-3" style="background-color: white;">
             <a href="https://github.com/YASHBOMBLE" target="_blank"><img src="./img/footer-icon-svg/github.svg"
@@ -190,14 +215,17 @@
                 alt="Linkedin"></a>
           </div>
         </div>
-        <h6 class="text-center">@2022 Yash Bomble</h6>
+        <h6 class="text-center" style="color:white;">©2022 Yash Bomble</h6>
 
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"></script>
-      <script src="./JavaScript/main.js"></script>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="./JavaScript/main.js"></script>
 </body>
 
 </html>
