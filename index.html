@@ -38,6 +38,20 @@
           <li class="nav-item">
             <a class="nav-link" href="#resume">Download Resume</a>
           </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Contact
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://www.linkedin.com/in/yash-bomble-662875201/">Linkedin</a></li>
+              <li><a class="dropdown-item" href="mailto:yashbomble2002@gmail.com">Email</a></li>
+              <li><a class="dropdown-item" href="#">Github</a></li>
+              <li><a class="dropdown-item" href="#">Whatsapp</a></li>
+              <li><a class="dropdown-item" href="https://www.instagram.com/yash_bomble1738/" target="_blank">Instagram</a></li>
+              <li><a class="dropdown-item" href="#">Facebook</a></li>
+              <li><a class="dropdown-item" href="tel:+91-9067613195">Call</a></li>
+            </ul>
+          </li>
       </div>
     </div>
   </nav>
@@ -78,11 +92,12 @@
     </div>
     <!--Currently work statement using animation-->
 
-    <div class="row">
+    <div class="row  boredr p-4 mb-2 mt-4">
 
-      <div class="col-md-6 bg-dark rounded " style="color: white;" id="skills">
+  
+      <div class="col-md-6  bg-dark  rounded " style="color: white;" id="skills">
         <h1 class=" "> Skills :</h1>
-        <ul type="none" class="shadow p-5 skill-show mt-3">
+        <ul type="none" class="shadow border p-5 skill-show mt-3">
           <li class="fade-in-text"> 👉 C Programing language.</li>
           <li class="fade-in-text">👉 Hyper text Markup Language ( HTML ).</li>
           <li class="fade-in-text">👉 Cascading Stylesheet ( CSS ) .</li>
@@ -94,13 +109,15 @@
 
       <div class="col-md-6" id="resume">
         <h2 class="" text-center mt-3"> Download Resume :</h1>
-          <div class="Download-btn mt-3">
-            <button class="btn btn-warning m-5   fw-bold" onclick="download()">Download Resume</button>
-            <button class="btn btn-light m-5   fw-bold">View Resume</button>
+         
+            <div class="Download-btn mt-3">
+              <button class="btn btn-warning m-5   fw-bold" onclick="download()">Download Resume</button>
+              <button class="btn btn-light m-5   fw-bold">View Resume</button>
+      
           </div>
       </div>
+     </div>
 
-    </div>
 
 
 
@@ -108,7 +125,7 @@
       <div class="row">
         <h1 class="">Project :</h1>
         <div class="col-md-6">
-          <div class="shadow rounded p-4 m-4 mb-4">
+          <div class="shadow rounded p-4 m-4 mb-4 border">
             <h6>Title : Digital Clock Using Html Css And JavaScript.</h6>
             <div class="p-3 text-center ">
               <img src="./img/project-img/Digiclock.jpg"
@@ -124,20 +141,20 @@
               </ul>
             </h6>
             <div class="project-container-btn mt-2">
-              <button class="btn btn-light fw-bold ">Source Code
+              <button class="btn btn-light fw-bold " onclick="showclockSoucecode()">Source Code
 
               </button>
-              <button class="btn btn-light fw-bold" onclick="live()">Live Demo</button>
+              <button class="btn btn-light fw-bold" onclick="showClock()">Live Demo</button>
             </div>
           </div>
 
         </div>
         <div class="col-md-6">
-          <div class="shadow p-4 rounded m-4 mb-4">
+          <div class="shadow p-4 rounded m-4 mb-4 border">
 
             <h6>Title : Calculator using Html Css And JavaScript.</h6>
             <div class="p-3 text-center ">
-              <img src="./img/project-img/Digiclock.jpg"
+              <img src="./img/project-img/calculator-output.jpg"
                 class="img-fluid rounded project-img-size shadow-sm img-thumbnail" alt="">
 
             </div>
@@ -150,10 +167,10 @@
               </ul>
             </h6>
             <div class="project-container-btn mt-2">
-              <button class="btn btn-light fw-bold ">Source Code
+              <button class="btn btn-light fw-bold " onclick="showcalSoucecode()">Source Code
 
               </button>
-              <button class="btn btn-light fw-bold" onclick="live()">Live Demo</button>
+              <button class="btn btn-light fw-bold" onclick="showCal()">Live Demo</button>
             </div>
           </div>
         </div>
@@ -166,7 +183,7 @@
 
         <div class="p-2 mb-4 mt-4 shadow">
           <div class="">
-            <table class="table">
+            <table class="table table-b">
               <tr class="table-dark">
                 <th>Sr.No</th>
                 <th>Qualification</th>
