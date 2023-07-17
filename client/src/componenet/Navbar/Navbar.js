@@ -3,34 +3,20 @@ import './Navbar.css'
 function Navbar() {
   return (
     <div>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary pos">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Portfolio</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#project">Project</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skill">Skill</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#resume"> Resume</a>
-        </li>
+   <header>
+    <a href="#" class="logo">Yash <span> Bomble</span>.</a>
 
+    <div class="bx bx-menu" id="menu-icon"></div>
 
-
-       
-      </ul>
-    </div>
-  </div>
-</nav>
+    <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <div class="bx bx-moon" id="darkmode"></div>
+    </ul>
+</header>
     </div>
   )
 }
