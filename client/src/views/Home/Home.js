@@ -12,6 +12,7 @@ import restaurant from './../../images/restaurant.png'
 import digiclock from './../../images/digiclock.png'
 import happy from './../../images/happy.png'
 import Profile from './../../images/Profile.png'
+import skills from './../../images/skills.png'
 import './Home.css'
 
 import Navbar from './../../componenet/Navbar/Navbar.js'
@@ -36,6 +37,37 @@ function Home() {
     setMobile('');
     setMessage('');
   }
+
+
+function DownloadFile(fileName) {
+    //Set the File URL.
+    var url = "./../Resume" + fileName;
+
+    //Create XMLHTTP Request.
+    var req = new XMLHttpRequest();
+    req.open("GET", url, true);
+    req.responseType = "blob";
+    req.onload = function () {
+        //Convert the Byte Data to BLOB object.
+        var blob = new Blob([req.response], { type: "application/octetstream" });
+
+        //Check the Browser type and download the File.
+        var isIE = false || !!document.documentMode;
+        if (isIE) {
+            window.navigator.msSaveBlob(blob, fileName);
+        } else {
+            var url = window.URL || window.webkitURL;
+            const link = url.createObjectURL(blob);
+            var a = document.createElement("a");
+            a.setAttribute("download", fileName);
+            a.setAttribute("href", link);
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+    };
+    req.send();
+};
   async function sendMesage() {
     const response = await axios.post('/send', {
       name: name,
@@ -86,11 +118,12 @@ function Home() {
         <div class="home-text">
           <span>Hello, I'm</span>
           <h1>Yash Bomble</h1>
-          <h2>Web Devloper</h2>
-          <p>I'm full stack web developer.<br /> my self yash bomble , i have recently complited Bacholers degree in computer science (Bsc
+          <h2 className='developer'>Web Devloper</h2>
+          <p>I'm full stack web developer.<br /> My self Yash Bomble , i have recently complited Bacholers degree in computer science (Bsc
             conputer Science).and currently i was completing my post graduation in computer science (Msc Computer Science).  <br />I am also looking for internship as Web developer in  reputed IT company. </p>
-          <a href="#contact" class="btn">Download CV</a>
+          <a href="" class="btn" onClick={DownloadFile('Yash Resume.pdf')}  >Download CV</a>
         </div>
+        
       </section>
 
       <section class="about" id="about">
@@ -105,8 +138,8 @@ function Home() {
 
           </div>
           <div class="about-text">
-            <p>I'm full stack web developer.<br /> my self yash bomble , i have recently complited Bacholers degree in computer science (Bsc
-              conputer Science).and currently i was completing my post graduation in computer science (Msc Computer Scvience).  <br /></p>
+            <p>I'm full stack web developer.<br /> My self Yash Bomble , i have recently complited Bacholers degree in computer science (Bsc
+              conputer Science).and currently i was completing my post graduation in computer science (Msc Computer Science).  <br /></p>
            
             <div class="information">
               <div class="info-box">
@@ -124,7 +157,7 @@ function Home() {
                 <span>yashbomble2002@gmail.com</span>
               </div>
             </div>
-            <a href="https://drive.google.com/file/d/1-F90wLMPk5iJdKb2RD6lRQ9HUClkRSIW/view" class="btn">Download CV</a><p />
+            <a href="" class="btn" onClick={DownloadFile('Yash Resume.pdf')}>Download CV</a><p />
           </div>
         </div>
       </section>
@@ -195,7 +228,7 @@ function Home() {
           </div>
 
           <div class="skills-img">
-            <img src={profile} alt="Skill" />
+            <img src={skills} alt="Skill" />
           </div>
         </div>
       </section>
