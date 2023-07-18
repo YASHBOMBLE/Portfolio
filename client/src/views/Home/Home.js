@@ -24,6 +24,7 @@ function Home() {
   const [message, setMessage] = useState('')
 
 
+
   async function cancle() {
     await Swal.fire({
       position: 'top-end',
@@ -39,35 +40,7 @@ function Home() {
   }
 
 
-function DownloadFile(fileName) {
-    //Set the File URL.
-    var url = "./../Resume" + fileName;
 
-    //Create XMLHTTP Request.
-    var req = new XMLHttpRequest();
-    req.open("GET", url, true);
-    req.responseType = "blob";
-    req.onload = function () {
-        //Convert the Byte Data to BLOB object.
-        var blob = new Blob([req.response], { type: "application/octetstream" });
-
-        //Check the Browser type and download the File.
-        var isIE = false || !!document.documentMode;
-        if (isIE) {
-            window.navigator.msSaveBlob(blob, fileName);
-        } else {
-            var url = window.URL || window.webkitURL;
-            const link = url.createObjectURL(blob);
-            var a = document.createElement("a");
-            a.setAttribute("download", fileName);
-            a.setAttribute("href", link);
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-        }
-    };
-    req.send();
-};
   async function sendMesage() {
     const response = await axios.post('/send', {
       name: name,
@@ -101,7 +74,35 @@ function DownloadFile(fileName) {
       setMessage('');
     }
   }
+  function DownloadFile(fileName) {
+    //Set the File URL.
+    var url = "./../Resume" + fileName;
 
+    //Create XMLHTTP Request.
+    var req = new XMLHttpRequest();
+    req.open("GET", url, true);
+    req.responseType = "blob";
+    req.onload = function () {
+        //Convert the Byte Data to BLOB object.
+        var blob = new Blob([req.response], { type: "application/octetstream" });
+
+        //Check the Browser type and download the File.
+        var isIE = false || !!document.documentMode;
+        if (isIE) {
+            window.navigator.msSaveBlob(blob, fileName);
+        } else {
+            var url = window.URL || window.webkitURL;
+            const link = url.createObjectURL(blob);
+            var a = document.createElement("a");
+            a.setAttribute("download", fileName);
+            a.setAttribute("href", link);
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+    };
+    req.send();
+};
   return (
     <div>
       <Navbar />
@@ -121,7 +122,7 @@ function DownloadFile(fileName) {
           <h2 className='developer'>Web Devloper</h2>
           <p>I'm full stack web developer.<br /> My self Yash Bomble , i have recently complited Bacholers degree in computer science (Bsc
             conputer Science).and currently i was completing my post graduation in computer science (Msc Computer Science).  <br />I am also looking for internship as Web developer in  reputed IT company. </p>
-          <a href="" class="btn" onClick={DownloadFile('Yash Resume.pdf')}  >Download CV</a>
+          <button class="btn"   >Download CV</button>
         </div>
         
       </section>
@@ -157,7 +158,7 @@ function DownloadFile(fileName) {
                 <span>yashbomble2002@gmail.com</span>
               </div>
             </div>
-            <a href="" class="btn" onClick={DownloadFile('Yash Resume.pdf')}>Download CV</a><p />
+            <button class="btn" >Download CV</button><p />
           </div>
         </div>
       </section>

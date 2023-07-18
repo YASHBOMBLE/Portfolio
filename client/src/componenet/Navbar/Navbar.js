@@ -1,11 +1,21 @@
-import React from 'react'
+import React,{ useState,useEffect }  from 'react'
 import './Navbar.css'
+import  './../../views/Home/Home.css'
 function Navbar() {
+  const [theam, setTheam] = useState('light')
+  const toggleTheme = () => {
+    if (theam === 'light') {
+      setTheam('dark');
+    } else {
+      setTheam('light');
+    }
+  };
+  useEffect(() => {
+    document.body.className = theam;
+  }, [theam]);
   return (
     <div>
-
-
-<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top height">
   <div class="container-fluid">
     <a  href="#" className='logo'>Yash <span> Bomble</span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,7 +29,6 @@ function Navbar() {
         <li class="">
           <a class="" href="#about">About</a>
         </li>
-      
         <li class="">
           <a class="" href='#skills'>Skills</a>
         </li>
@@ -29,7 +38,7 @@ function Navbar() {
         <li class="">
           <a class="" href="#contact">Contact</a>
         </li>
-        <div class="bx bx-moon" id="darkmode"></div>
+        <div class="bx bx-moon" id="darkmode" onClick={toggleTheme}></div>
       </ul>
      
     </div>
