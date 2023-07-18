@@ -106,11 +106,11 @@ function Home() {
           <div class="about-text">
             <p>I'm full stack web developer.<br /> my self yash bomble , i have recently complited Bacholers degree in computer science (Bsc
               conputer Science).and currently i was completing my post graduation in computer science (Msc Computer Scvience).  <br /></p>
-            <a href="#contact" class="btn">Download CV</a><p />
+           
             <div class="information">
               <div class="info-box">
                 <i class='bx bxs-user'></i>
-                <span>Name</span>
+                <span>Yash Dattatray Bomble</span>
               </div>
 
               <div class="info-box">
@@ -123,7 +123,7 @@ function Home() {
                 <span>yashbomble2002@gmail.com</span>
               </div>
             </div>
-            <button class="btn">Download Cv</button>
+            <a href="https://drive.google.com/file/d/1-F90wLMPk5iJdKb2RD6lRQ9HUClkRSIW/view" class="btn">Download CV</a><p />
           </div>
         </div>
       </section>
@@ -231,92 +231,12 @@ function Home() {
         </div>
     </div>
 </section>
-      <hr className='mt-3' id='resume' />
-      <div className='row' >
-        <div className='col-md-12'>
-          <div className='project-title'>
-            Resume
-          </div>
-        </div>
-      </div>
-      <div className='row' id='resume'>
-        <div className='col-md-4'>
-
-        </div>
-        <div className='col-md-4 text-center mt-4 mb-3 resume-container'>
-          <a href='https://drive.google.com/file/d/1-F90wLMPk5iJdKb2RD6lRQ9HUClkRSIW/view' target='_blank' >Get Resume</a>
-        </div>
-        <div className='col-md-4'>
-
-        </div>
-      </div>
-
-      <hr className='mt-3' id='contact' />
-      <div className='row' >
-        <div className='col-md-12'>
-          <div className='project-title'>
-            Contact
-          </div>
-        </div>
-      </div>
 
 
-      <div class="background">
-        <div class="container">
-          <div class="screen">
-            <div class="screen-header">
-              <div class="screen-header-left">
-                <div class="screen-header-button close"></div>
-                <div class="screen-header-button maximize"></div>
-                <div class="screen-header-button minimize"></div>
-              </div>
-              <div class="screen-header-right">
-                <div class="screen-header-ellipsis"></div>
-                <div class="screen-header-ellipsis"></div>
-                <div class="screen-header-ellipsis"></div>
-              </div>
-            </div>
-            <div class="screen-body">
-              <div class="screen-body-item left">
-                <div class="app-title">
-                  <span>CONTACT</span>
-                  <span>US</span>
-                </div>
-                <div class="app-contact">CONTACT INFO : +91-8261025656</div>
-              </div>
-              <div class="screen-body-item">
-                <div class="app-form">
-                  <div class="app-form-group">
-                    <input class="app-form-control" placeholder="NAME" value={name} onChange={(e) => setName(e.target.value)} />
-                  </div>
-                  <div class="app-form-group">
-
-                    <input class="app-form-control" placeholder="EMAIL" value={email} onChange={(e) => setEmail(e.target.value)} />
-                  </div>
-                  <div class="app-form-group">
-                    <input class="app-form-control" placeholder="CONTACT NO" value={mobile} onChange={(e) => setMobile(e.target.value)} />
-                  </div>
-                  <div class="app-form-group message">
-                    <input class="app-form-control" placeholder="MESSAGE" value={message} onChange={(e) => setMessage(e.target.value)} />
-                  </div>
-                  <div class="app-form-group buttons">
-                    <button class="app-form-button" onClick={cancle}>CANCEL</button>
-                    <button class="app-form-button" onClick={sendMesage}>SEND</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      
-      <hr />
-      <p className='text-center footer-text' >Copyright@ Yash Bomble </p>
       <section class="contact" id="contact">
     <div class="heading">
         <h2>Contact</h2>
-        <span>Connect With Us</span>
+        <span>Connect With Me</span>
     </div>
     <div class="contact-form">
         <form action="">
@@ -330,7 +250,7 @@ function Home() {
     </div>
 </section>
 <div class="footer">
-    <h2>Follow Us</h2>
+    <h2>Follow Me On</h2>
     <div class="footer-social">
         <a href="#"><i class='bx bxl-facebook'></i></a>
         <a href="#"><i class='bx bxl-twitter'></i></a>
