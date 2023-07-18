@@ -11,7 +11,7 @@ import gym from './../../images/gym.png'
 import restaurant from './../../images/restaurant.png'
 import digiclock from './../../images/digiclock.png'
 import happy from './../../images/happy.png'
-
+import Profile from './../../images/Profile.png'
 import './Home.css'
 
 import Navbar from './../../componenet/Navbar/Navbar.js'
@@ -81,7 +81,7 @@ function Home() {
           <a href="#"><i class='bx bxl-facebook'></i></a>
         </div>
         <div class="home-img ">
-          <img src={profile} class="rounded-circle img-fluid shadow img-thumbnail" alt="" />
+          <img src={Profile} class="rounded-circle img-fluid shadow img-thumbnail" alt="" />
         </div>
         <div class="home-text">
           <span>Hello, I'm</span>
@@ -101,7 +101,8 @@ function Home() {
 
         <div class="about-container">
           <div class="about-img">
-            <img src="main.png" alt="" />
+          <img src={Profile} class="rounded-circle img-fluid shadow img-thumbnail" alt="" />
+
           </div>
           <div class="about-text">
             <p>I'm full stack web developer.<br /> my self yash bomble , i have recently complited Bacholers degree in computer science (Bsc
