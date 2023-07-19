@@ -110,9 +110,10 @@ function Home() {
       <section class="home" id="home">
 
         <div class="social">
-          <a href="#"><i class='bx bxl-github'></i></a>
-          <a href="#"><i class='bx bxl-instagram'></i></a>
-          <a href="#"><i class='bx bxl-facebook'></i></a>
+          <a href="https://github.com/YASHBOMBLE" target='_blank'><i class='bx bxl-github'></i></a>
+          <a href="https://www.instagram.com/yasshhhh_16/?igshid=MzNlNGNkZWQ4Mg%3D%3D" target='_blank'><i class='bx bxl-instagram'></i></a>
+          <a href="https://www.facebook.com/yash.bomble.5?mibextid=ZbWKwL" target='_blank'><i class='bx bxl-facebook'></i></a>
+          <a href='https://www.linkedin.com/in/yashbomble' target='_blank' ><i class="fa-brands fa-linkedin"></i></a>
         </div>
         <div class="home-img ">
           <img src={Profile} class="rounded-circle img-fluid shadow img-thumbnail" alt="" />
@@ -305,14 +306,14 @@ function Home() {
           </form>
         </div>
       </section>
-      
+
       <div class="footer">
         <h2>Follow Me On</h2>
         <div class="footer-social">
-          <a href="#"><i class='bx bxl-facebook'></i></a>
-          <a href="#"><i class='bx bxl-twitter'></i></a>
-          <a href="#"><i class='bx bxl-instagram'></i></a>
-          <a href="#"><i class='bx bxl-youtube'></i></a>
+          <a href="https://www.facebook.com/yash.bomble.5?mibextid=ZbWKwL" target='_blank'><i class='bx bxl-facebook'></i></a>
+          <a href="https://instagram.com/yasshhhh_16/?igshid=MzNlNGNkZWQ4Mg%3D%3D" target='_blank'><i class='bx bxl-instagram'></i></a>
+          <a href='https://www.linkedin.com/in/yashbomble' target='_blank' ><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://wa.me/+919067613195"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
 
       </div>
