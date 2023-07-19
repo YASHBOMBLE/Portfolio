@@ -999,3 +999,10 @@ padding: 4px;
                                                                 background-color: #fff;
                                                                 color: #333;
                                                               }
+                                                              .textDecoration{
+                                                                text-decoration: none;
+                                                                color: black;
+                                                              }
+                                                              .certificateimgsize{
+                                                                height: 190px;
+                                                              }

@@ -13,6 +13,7 @@ import digiclock from './../../images/digiclock.png'
 import happy from './../../images/happy.png'
 import Profile from './../../images/Profile.png'
 import skills from './../../images/skills.png'
+import icp from './../../images/icp.jpeg'
 import './Home.css'
 
 import Navbar from './../../componenet/Navbar/Navbar.js'
@@ -83,26 +84,26 @@ function Home() {
     req.open("GET", url, true);
     req.responseType = "blob";
     req.onload = function () {
-        //Convert the Byte Data to BLOB object.
-        var blob = new Blob([req.response], { type: "application/octetstream" });
+      //Convert the Byte Data to BLOB object.
+      var blob = new Blob([req.response], { type: "application/octetstream" });
 
-        //Check the Browser type and download the File.
-        var isIE = false || !!document.documentMode;
-        if (isIE) {
-            window.navigator.msSaveBlob(blob, fileName);
-        } else {
-            var url = window.URL || window.webkitURL;
-            const link = url.createObjectURL(blob);
-            var a = document.createElement("a");
-            a.setAttribute("download", fileName);
-            a.setAttribute("href", link);
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-        }
+      //Check the Browser type and download the File.
+      var isIE = false || !!document.documentMode;
+      if (isIE) {
+        window.navigator.msSaveBlob(blob, fileName);
+      } else {
+        var url = window.URL || window.webkitURL;
+        const link = url.createObjectURL(blob);
+        var a = document.createElement("a");
+        a.setAttribute("download", fileName);
+        a.setAttribute("href", link);
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      }
     };
     req.send();
-};
+  };
   return (
     <div>
       <Navbar />
@@ -124,7 +125,7 @@ function Home() {
             conputer Science).and currently i was completing my post graduation in computer science (Msc Computer Science).  <br />I am also looking for internship as Web developer in  reputed IT company. </p>
           <button class="btn"   >Download CV</button>
         </div>
-        
+
       </section>
 
       <section class="about" id="about">
@@ -135,13 +136,13 @@ function Home() {
 
         <div class="about-container">
           <div class="about-img">
-          <img src={Profile} class="rounded-circle img-fluid shadow img-thumbnail" alt="" />
+            <img src={Profile} class="rounded-circle img-fluid shadow img-thumbnail" alt="" />
 
           </div>
           <div class="about-text">
             <p>I'm full stack web developer.<br /> My self Yash Bomble , i have recently complited Bacholers degree in computer science (Bsc
               conputer Science).and currently i was completing my post graduation in computer science (Msc Computer Science).  <br /></p>
-           
+
             <div class="information">
               <div class="info-box">
                 <i class='bx bxs-user'></i>
@@ -150,15 +151,33 @@ function Home() {
 
               <div class="info-box">
                 <i class='bx bxs-phone'></i>
-                <span>+91-8261025656</span>
+                <span> <a href='tel:+91-8261025656' className='textDecoration'>+91-8261025656</a></span>
               </div>
 
               <div class="info-box">
                 <i class='bx bxs-envelope'></i>
-                <span>yashbomble2002@gmail.com</span>
+                <span><a href='mailto:yashbomble2002@gmail.com' className='textDecoration'>yashbomble2002@gmail.com</a></span>
               </div>
             </div>
             <button class="btn" >Download CV</button><p />
+          </div>
+        </div>
+      </section>
+
+      <section class="certificate" id="certificate">
+        <div class="heading">
+          <h2>Certificate</h2>
+          <span></span>
+        </div>
+
+        <div class="about-container">
+
+          <div class="about-text">
+            <p><h4>Internship Cohort Program (ICP) </h4>www.roadtocode.org<br />Aug 2022  <br /></p>
+
+          </div>
+          <div class="about-img">
+            <img src={icp} class=" img-fluid shadow  certificateimgsize" alt="" />
           </div>
         </div>
       </section>
@@ -170,6 +189,9 @@ function Home() {
         </div>
 
         <div class="skills-container">
+          <div class="skills-img">
+            <img src={skills} alt="Skill" />
+          </div>
           <div class="bars">
 
             <div class="bars-box">
@@ -228,76 +250,76 @@ function Home() {
             </div>
           </div>
 
-          <div class="skills-img">
-            <img src={skills} alt="Skill" />
+
+        </div>
+      </section>
+      
+      <section class="services" id="services">
+        <div class="heading">
+          <h2>Project's</h2>
+          <span>My Project's</span>
+        </div>
+        <div class="services-content">
+          <div class="services-box">
+            <img src={gym} className='img-fluid project-img' />
+            <h3>Gym Management System</h3>
+            <a href="#">Source Code</a>
+            <a href="#">Online Demo</a>
+          </div>
+
+          <div class="services-box">
+            <img src={restaurant} className='img-fluid project-img' />
+            <h3>Hotel Table Booking System</h3>
+            <a href="#">Source Code</a>
+            <a href="#">Online Demo</a>
+          </div>
+          <div class="services-box">
+            <img src={digiclock} className='img-fluid project-img' />
+            <h3>Digital Clock</h3>
+            <a href="#">Source Code</a>
+            <a href="#">Online Demo</a>
+          </div>
+
+          <div class="services-box">
+            <img src={happy} className='img-fluid project-img' />
+            <h3>Emoji App</h3>
+            <a href="#">Source Code</a>
+            <a href="#">Online Demo</a>
           </div>
         </div>
       </section>
-      <section class="services" id="services">
-    <div class="heading">
-        <h2>Project's</h2>
-        <span>My Project's</span>
-    </div>
-    <div class="services-content">
-
-        <div class="services-box">
-        <img src={gym} className='img-fluid project-img'/>
-            <h3>Gym Management System</h3>
-            <a href="#">Learn More</a>
-        </div>
-
-        <div class="services-box">
-        <img src={restaurant} className='img-fluid project-img'/>
-
-            <h3>Hotel Table Booking System</h3>
-            <a href="#">Learn More</a>
-        </div>
-        <div class="services-box">
-        <img src={digiclock} className='img-fluid project-img'/>
-
-            <h3>Digital Clock</h3>
-            <a href="#">Learn More</a>
-        </div>
-
-        <div class="services-box">
-        <img src={happy} className='img-fluid project-img'/>
-            <h3>Emoji App</h3>
-            <a href="#">Learn More</a>
-        </div>
-    </div>
-</section>
-
 
       <section class="contact" id="contact">
-    <div class="heading">
-        <h2>Contact</h2>
-        <span>Connect With Me</span>
-    </div>
-    <div class="contact-form">
-        <form action="">
-            <input type="text" placeholder="Your Name"  value={name} onChange={(e) => setName(e.target.value)}/>
-            <input type="text" placeholder="Mo.No" value={mobile} onChange={(e) => setMobile(e.target.value)}/>
-            <input type="email" name="" id="" placeholder="Your Email" value={email} onChange={(e) => setEmail(e.target.value)}/>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..."  value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+        <div class="heading">
+          <h2>Contact</h2>
+          <span>Connect With Me</span>
+        </div>
+        <div class="contact-form">
+          <form action="">
+            <input type="text" placeholder="Your Name" value={name} onChange={(e) => setName(e.target.value)} />
+            <input type="text" placeholder="Mo.No" value={mobile} onChange={(e) => setMobile(e.target.value)} />
+            <input type="email" name="" id="" placeholder="Your Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..." value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
             <input type="button" onClick={sendMesage} value="Send" class="contact-button" />
-            
-        </form>
-    </div>
-</section>
-<div class="footer">
-    <h2>Follow Me On</h2>
-    <div class="footer-social">
-        <a href="#"><i class='bx bxl-facebook'></i></a>
-        <a href="#"><i class='bx bxl-twitter'></i></a>
-        <a href="#"><i class='bx bxl-instagram'></i></a>
-        <a href="#"><i class='bx bxl-youtube'></i></a>
-    </div>
 
-</div>
+          </form>
+        </div>
+      </section>
+      
+      <div class="footer">
+        <h2>Follow Me On</h2>
+        <div class="footer-social">
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+          <a href="#"><i class='bx bxl-twitter'></i></a>
+          <a href="#"><i class='bx bxl-instagram'></i></a>
+          <a href="#"><i class='bx bxl-youtube'></i></a>
+        </div>
 
-<div class="copyright">
-    &#169; Yash| All Right Reserved.<p/>
-</div>
+      </div>
+
+      <div class="copyright">
+        &#169; Yash| All Right Reserved.<p />
+      </div>
     </div>
 
   )

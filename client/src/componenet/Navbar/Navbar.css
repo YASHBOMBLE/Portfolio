@@ -1,8 +1,15 @@
 .pos{
     position: sticky;
-    top: 0.5px;
-    
+    top: 0.5px;  
 }
 .height{
     height: 60px;
 }
+.dark {
+    background-color: #333;
+    color: #fff;
+  }
+  .light {
+    background-color: #fff;
+    color: #333;
+  }
