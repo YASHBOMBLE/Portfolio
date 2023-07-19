@@ -124,7 +124,7 @@ function Home() {
           <h2 className='developer'>Web Devloper</h2>
           <p>I'm full stack web developer.<br /> My self Yash Bomble , i have recently complited Bacholers degree in computer science (Bsc
             conputer Science).and currently i was completing my post graduation in computer science (Msc Computer Science).  <br />I am also looking for internship as Web developer in  reputed IT company. </p>
-          <button class="btn"   >Download CV</button>
+          <a class="btn" href='https://drive.google.com/file/d/1-F90wLMPk5iJdKb2RD6lRQ9HUClkRSIW/view?pli=1'  target='_blank'>Download CV</a>
         </div>
 
       </section>
@@ -160,7 +160,7 @@ function Home() {
                 <span><a href='mailto:yashbomble2002@gmail.com' className='textDecoration'>yashbomble2002@gmail.com</a></span>
               </div>
             </div>
-            <button class="btn" >Download CV</button><p />
+            <a class="btn" href='https://drive.google.com/file/d/1-F90wLMPk5iJdKb2RD6lRQ9HUClkRSIW/view?pli=1'  target='_blank'>Download CV</a>
           </div>
         </div>
       </section>
@@ -291,28 +291,28 @@ function Home() {
           <div class="services-box">
             <img src={gym} className='img-fluid project-img' />
             <h3>Gym Management System</h3>
-            <a href="#">Source Code</a>
-            <a href="#">Online Demo</a>
+            <a href="https://github.com/YASHBOMBLE/GYM-SYSTEM" target='_blank'>Source Code</a>
+            <a href="https://gymsystem.onrender.com/login" target='_blank'>Online Demo</a>
           </div>
 
           <div class="services-box">
             <img src={restaurant} className='img-fluid project-img' />
             <h3>Hotel Table Booking System</h3>
-            <a href="#">Source Code</a>
-            <a href="#">Online Demo</a>
+            <a href="https://github.com/YASHBOMBLE/Hotel_management_project-booking-syatem-" target='_blank'>Source Code</a>
+            <a href="tablebookingsystem.onrender.com" target='_blank'>Online Demo</a>
           </div>
           <div class="services-box">
             <img src={digiclock} className='img-fluid project-img' />
             <h3>Digital Clock</h3>
-            <a href="#">Source Code</a>
-            <a href="#">Online Demo</a>
+            <a href="https://github.com/YASHBOMBLE/Digital_Clock" target='_blank'>Source Code</a>
+            <a href="https://digital-clock2002.netlify.app/" target='_blank'>Online Demo</a>
           </div>
 
           <div class="services-box">
             <img src={happy} className='img-fluid project-img' />
             <h3>Emoji App</h3>
-            <a href="#">Source Code</a>
-            <a href="#">Online Demo</a>
+            <a href="https://github.com/YASHBOMBLE/emoji-app" target='_blank'>Source Code</a>
+            <a href="https://emoji-app123.netlify.app/" target='_blank'>Online Demo</a>
           </div>
         </div>
       </section>
