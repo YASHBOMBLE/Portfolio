@@ -183,6 +183,33 @@ function Home() {
         </div>
       </section>
 
+      <section class="education" id="education">
+        <div class="heading">
+          <h2>Education</h2>
+         
+        </div>
+        <div class="services-content">
+          <div class="services-box1">
+            <h3>SSC </h3>
+           <h4>Maharashtra State Board</h4>
+           <h6>Year : MARCH-2018</h6>
+          </div>
+
+          <div class="services-box1">
+            <h3>HSC </h3>
+           <h4>Maharashtra State Board</h4>
+           <h6>Year : FEB-2020</h6>
+          </div>
+
+          <div class="services-box1">
+            <h3>Graduation </h3>
+           <h4>Savitribai Phule Pune University</h4>
+           <h6>Year : 2020-2023</h6>
+          </div>
+          
+        </div>
+      </section>
+   
       <section class="skills" id="skills">
         <div class="heading">
           <h2>Skills</h2>
@@ -254,7 +281,7 @@ function Home() {
 
         </div>
       </section>
-      
+
       <section class="services" id="services">
         <div class="heading">
           <h2>Project's</h2>
