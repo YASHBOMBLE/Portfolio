@@ -12,12 +12,14 @@ dotenv.config();
 
 const PORT = process.env.PORT || 5000;
 
+
+
 mongoose.connect(process.env.MONGODB_URL, () => {
     console.log('Connected to MongoDB');
 })
 
 app.post('/send',async(req,res)=>{
-    const{name,email,mobile,message} = req.body;
+    const{name,email,mobile,message,ip} = req.body;
 
     if(!validator.isEmail(email))
 
@@ -42,7 +44,8 @@ app.post('/send',async(req,res)=>{
         name : name,
         email : email,
         mobile : mobile,
-        message : message
+        message : message,
+        ip  : ip
     })
 
     const savedMessage = await Message.save();
@@ -52,7 +55,7 @@ app.post('/send',async(req,res)=>{
             message: "Message sent successfully",
             data: savedMessage
         })
-   
+
         
 
 })

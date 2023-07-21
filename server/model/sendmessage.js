@@ -5,6 +5,7 @@ const messageSchema = new Schema({
   email : String,
   mobile : String,
   message : String,
+  ip : String
 }, { timestamps: true },{Location:true})
 
 const sendmessage = model("sendmessage", messageSchema)

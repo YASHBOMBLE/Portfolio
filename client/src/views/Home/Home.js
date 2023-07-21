@@ -194,7 +194,7 @@ function Home() {
 
           </div>
           <div class="about-img">
-            <img src={icp} class=" img-fluid shadow  certificateimgsize" alt="" />
+            <img src={icp} class="img-fluid shadow certificateimgsize" alt="" />
           </div>
         </div>
       </section>
@@ -220,7 +220,7 @@ function Home() {
           <div class="services-box1">
             <h3>Graduation </h3>
             <h4>Savitribai Phule Pune University</h4>
-            <h6>Year : 2020-2023</h6>
+            <h6>Year : 2020-2023 / (BCS)</h6>
           </div>
 
         </div>
