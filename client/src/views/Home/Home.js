@@ -315,7 +315,7 @@ function Home() {
             <img src={restaurant} className='img-fluid project-img' />
             <h3>Hotel Table Booking System</h3>
             <a href="https://github.com/YASHBOMBLE/Hotel_management_project-booking-syatem-" target='_blank'>Source Code</a>
-            <a href="tablebookingsystem.onrender.com" target='_blank'>Online Demo</a>
+            <a href="https://tablebookingsystem.onrender.com" target='_blank'>Online Demo</a>
           </div>
           <div class="services-box">
             <img src={digiclock} className='img-fluid project-img' />
