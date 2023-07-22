@@ -623,8 +623,8 @@ padding: 4px;
                                                               }
                                                               .home-img {
                                                                   order: 3;
-                                                                  height: 50%;
-                                                                  width: 50%;
+                                                                  height: 70%;
+                                                                  width: 70%;
                                                                   border-radius: 50%;
                                                               }
                                                               .home-img img {
@@ -677,7 +677,7 @@ padding: 4px;
                                                                   margin-top: 2rem;
                                                               }
                                                               .about-img img {
-                                                                  width: 80%;
+                                                                  width: 50%;
                                                                   border-radius: 0.5rem;
                                                               }
                                                               .about-text p {
