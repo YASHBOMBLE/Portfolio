@@ -124,7 +124,7 @@ function Home() {
           <h2 className='developer'>Web Devloper</h2>
           <p>I'm full stack web developer.<br /> My self Yash Bomble , i have recently complited Bacholers degree in computer science (Bsc
             conputer Science).and currently i was completing my post graduation in computer science (Msc Computer Science).  <br />I am also looking for internship as Web developer in  reputed IT company. </p>
-          <a class="btn" href='https://drive.google.com/file/d/1-F90wLMPk5iJdKb2RD6lRQ9HUClkRSIW/view?pli=1'  target='_blank'>Download CV</a>
+          <a class="btn" onClick={DownloadFile('Yash Resume.pdf')}  target='_blank'>Download CV</a>
         </div>
 
       </section>
