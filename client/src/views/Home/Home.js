@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Swal from 'sweetalert2'
 import axios from 'axios'
 import swal from 'sweetalert';
@@ -23,8 +23,6 @@ function Home() {
   const [email, setEmail] = useState('')
   const [mobile, setMobile] = useState('')
   const [message, setMessage] = useState('')
-  const [ip, setIp] = useState('')
-
 
 
 
@@ -45,15 +43,11 @@ function Home() {
 
 
   async function sendMesage() {
-
-
-
     const response = await axios.post('/send', {
       name: name,
       email: email,
       mobile: mobile,
-      message: message,
-      ip : ip
+      message: message
 
     })
 
@@ -110,15 +104,6 @@ function Home() {
     };
     req.send();
   };
-
- useEffect(()=>{
-
-  fetch('https://api.ipify.org')
-  .then((res) => res.text())
-  .then(ip => setIp(ip))
-  
- },[])
-
   return (
     <div>
       <Navbar />
@@ -132,8 +117,6 @@ function Home() {
         </div>
         <div class="home-img ">
           <img src={Profile} class="rounded-circle img-fluid shadow img-thumbnail" alt="" />
-
-
         </div>
         <div class="home-text">
           <span>Hello, I'm</span>
@@ -141,7 +124,7 @@ function Home() {
           <h2 className='developer'>Web Devloper</h2>
           <p>I'm full stack web developer.<br /> My self Yash Bomble , i have recently complited Bacholers degree in computer science (Bsc
             conputer Science).and currently i was completing my post graduation in computer science (Msc Computer Science).  <br />I am also looking for internship as Web developer in  reputed IT company. </p>
-          <a class="btn" href='https://drive.google.com/file/d/1-F90wLMPk5iJdKb2RD6lRQ9HUClkRSIW/view?pli=1' target='_blank'>Download CV</a>
+          <a class="btn" href='https://drive.google.com/file/d/1-F90wLMPk5iJdKb2RD6lRQ9HUClkRSIW/view?pli=1'  target='_blank'>Download CV</a>
         </div>
 
       </section>
@@ -155,6 +138,7 @@ function Home() {
         <div class="about-container">
           <div class="about-img">
             <img src={Profile} class="rounded-circle img-fluid shadow img-thumbnail" alt="" />
+
           </div>
           <div class="about-text">
             <p>I'm full stack web developer.<br /> My self Yash Bomble , i have recently complited Bacholers degree in computer science (Bsc
@@ -176,7 +160,7 @@ function Home() {
                 <span><a href='mailto:yashbomble2002@gmail.com' className='textDecoration'>yashbomble2002@gmail.com</a></span>
               </div>
             </div>
-            <a class="btn" href='https://drive.google.com/file/d/1-F90wLMPk5iJdKb2RD6lRQ9HUClkRSIW/view?pli=1' target='_blank'>Download CV</a>
+            <a class="btn" href='https://drive.google.com/file/d/1-F90wLMPk5iJdKb2RD6lRQ9HUClkRSIW/view?pli=1'  target='_blank'>Download CV</a>
           </div>
         </div>
       </section>
@@ -194,7 +178,7 @@ function Home() {
 
           </div>
           <div class="about-img">
-            <img src={icp} class="img-fluid shadow certificateimgsize" alt="" />
+            <img src={icp} class=" img-fluid shadow  certificateimgsize" alt="" />
           </div>
         </div>
       </section>
@@ -202,30 +186,30 @@ function Home() {
       <section class="education" id="education">
         <div class="heading">
           <h2>Education</h2>
-
+         
         </div>
         <div class="services-content">
           <div class="services-box1">
             <h3>SSC </h3>
-            <h4>Maharashtra State Board</h4>
-            <h6>Year : MARCH-2018</h6>
+           <h4>Maharashtra State Board</h4>
+           <h6>Year : MARCH-2018</h6>
           </div>
 
           <div class="services-box1">
             <h3>HSC </h3>
-            <h4>Maharashtra State Board</h4>
-            <h6>Year : FEB-2020</h6>
+           <h4>Maharashtra State Board</h4>
+           <h6>Year : FEB-2020</h6>
           </div>
 
           <div class="services-box1">
             <h3>Graduation </h3>
-            <h4>Savitribai Phule Pune University</h4>
-            <h6>Year : 2020-2023 / (BCS)</h6>
+           <h4>Savitribai Phule Pune University</h4>
+           <h6>Year : 2020-2023</h6>
           </div>
-
+          
         </div>
       </section>
-
+   
       <section class="skills" id="skills">
         <div class="heading">
           <h2>Skills</h2>
@@ -315,7 +299,7 @@ function Home() {
             <img src={restaurant} className='img-fluid project-img' />
             <h3>Hotel Table Booking System</h3>
             <a href="https://github.com/YASHBOMBLE/Hotel_management_project-booking-syatem-" target='_blank'>Source Code</a>
-            <a href="https://tablebookingsystem.onrender.com" target='_blank'>Online Demo</a>
+            <a href="tablebookingsystem.onrender.com" target='_blank'>Online Demo</a>
           </div>
           <div class="services-box">
             <img src={digiclock} className='img-fluid project-img' />
